@@ -1,0 +1,6 @@
+framework module Pods_WHO_WHOUITests {
+  umbrella header "Pods-WHO-WHOUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
