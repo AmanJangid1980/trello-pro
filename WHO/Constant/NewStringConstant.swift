@@ -1002,7 +1002,7 @@ struct NewString {
     static let Implantsper = "0.05% Implants - 0.8% IUD".localizeString()
     static let Femalesterilization = "0.5% Female sterilization - 0.15% Vasectomy".localizeString()
     static let less48yrs = "Additional Info on how to use the methods safely and effectively".localizeString()
-    static let Medical = "Medical Eligibility Criteria for Contraceptive Use (India-adapted WHO MEC Wheel 2022)".localizeString()
+    static let Medical = "Medical Eligibility Criteria for Contraceptive Use (India-adapted WHO MEC Wheel)".localizeString()
     static let SKIP = "SKIP".localizeString()
     static let START = "START".localizeString()
 }

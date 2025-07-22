@@ -44,7 +44,7 @@
                                             <constraint firstAttribute="width" secondItem="IbX-fR-cdp" secondAttribute="height" multiplier="247:101" id="bch-gR-W7J"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medical Eligibility Criteria for Contraceptive Use (India-adapted WHO MEC Wheel 2022)" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="TCP-r7-I3k">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medical Eligibility Criteria for Contraceptive Use (India-adapted WHO MEC Wheel)" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="TCP-r7-I3k">
                                         <rect key="frame" x="132.33333333333337" y="0.0" width="221.66666666666663" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="VCa-qH-fFb"/>

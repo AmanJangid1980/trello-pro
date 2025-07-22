@@ -17422,7 +17422,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Medical Eligibility Criteria for Contraceptive Use (India-adapted WHO MEC Wheel 2022)"
+            "value" : "Medical Eligibility Criteria for Contraceptive Use (India-adapted WHO MEC Wheel)"
           }
         },
         "gu-IN" : {
@@ -18710,7 +18710,7 @@
         }
       }
     },
-    "Medical Eligibility Criteria for Contraceptive Use (India-adapted WHO MEC Wheel 2022)." : {
+    "Medical Eligibility Criteria for Contraceptive Use (India-adapted WHO MEC Wheel)." : {
       "extractionState" : "manual",
       "localizations" : {
         "as-IN" : {
