@@ -105,7 +105,7 @@ extension HomeListViewController: UITableViewDelegate {
             }
             break
         case 5:
-            let email = "studio@fountainheadsolution.com"
+            let email = "info.indiamecwheel@gmail.com"
             if let url = URL(string: "mailto:\(email)") {
               if #available(iOS 10.0, *) {
                 UIApplication.shared.open(url)
@@ -127,7 +127,7 @@ extension HomeListViewController: UITableViewDelegate {
         composeVC.mailComposeDelegate = self
 
         // Configure the fields of the interface.
-        composeVC.setToRecipients(["studio@fountainheadsolution.com"])
+        composeVC.setToRecipients(["info.indiamecwheel@gmail.com"])
         composeVC.setSubject("")
         composeVC.setMessageBody("", isHTML: false)
 
