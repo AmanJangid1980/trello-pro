@@ -180,7 +180,7 @@ struct Implants{
     
     static let content_6 = "2-rod implant, each rod containing 75 mg of LNG.".localizeString()
     
-    static let content_7 = "2. 1-rod implant, containing 68 mg of etonogestrel (Barium Impregnated).".localizeString()
+    static let content_7 = "2. 1-rod implant, containing 68 mg of etonogestrel (ETG) (Barium Impregnated).".localizeString()
         
     static let title_8 = "When can a woman start progestogen-only implants?".localizeString()
     
