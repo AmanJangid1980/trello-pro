@@ -109,23 +109,23 @@ extension LanguageViewController: UITableViewDataSource {
 extension LanguageViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         Bundle.setLanguage(lang: self.languageList[indexPath.row].code)
-//        UserDefaults.standard.setValue(self.languageList[indexPath.row].code, forKey: "SelectedLanguege")
+        UserDefaults.standard.setValue(self.languageList[indexPath.row].code, forKey: "SelectedLanguege")
         
-//        if let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow }) {
-//            let navigationController = Storyboard.dashboard.instantiateViewController(withIdentifier: "NavigationController") as! UINavigationController
-//
-//            navigationController.setViewControllers([Storyboard.dashboard.instantiateViewController(withIdentifier: "LaunchViewController")], animated: false)
-//    //        navigationController.setViewControllers([UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DashboardViewController")], animated: false)
-//            window.rootViewController = navigationController
-//            UIView.transition(with: window, duration: 0.3, options: [.transitionCrossDissolve], animations: nil, completion: nil)
-//            window.makeKeyAndVisible()
-//        } else {
+        if let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow }) {
+            let navigationController = Storyboard.dashboard.instantiateViewController(withIdentifier: "NavigationController") as! UINavigationController
+
+            navigationController.setViewControllers([Storyboard.dashboard.instantiateViewController(withIdentifier: "LaunchViewController")], animated: false)
+    //        navigationController.setViewControllers([UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DashboardViewController")], animated: false)
+            window.rootViewController = navigationController
+            UIView.transition(with: window, duration: 0.3, options: [.transitionCrossDissolve], animations: nil, completion: nil)
+            window.makeKeyAndVisible()
+        } else {
             let alertV = UIAlertController(title: "", message: "Please reopen application to change language", preferredStyle: .alert)
             alertV.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
                 exit(0)
             }))
             self.present(alertV, animated: true)
-//        }        
+        }        
 //        if isFromLaunch {
 //            self.navigationController?.popViewController(animated: true)
 //        } else {

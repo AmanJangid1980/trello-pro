@@ -180,7 +180,7 @@ struct Implants{
     
     static let content_6 = "2-rod implant, each rod containing 75 mg of LNG.".localizeString()
     
-    static let content_7 = "2. 1-rod implant, containing 68 mg of etonogestrel (ETG) (Barium Impregnated).".localizeString()
+    static let content_7 = "2. 1-rod implant, containing 68 mg of etonogestrel (Barium Impregnated).".localizeString()
         
     static let title_8 = "When can a woman start progestogen-only implants?".localizeString()
     
@@ -414,7 +414,7 @@ struct NavigationList {
     
     static let SubListTitle2 = "How to Use the Wheel".localizeString()
     
-    static let Title3 = "India-adapted WHO MEC Wheel".localizeString()
+    static let Title3 = "India-adapted MEC Wheel 2022".localizeString()
     
     static let Title4 = "Eligibility Tool".localizeString()
     
@@ -713,7 +713,7 @@ struct ContraceptiveList{
     static let ProgressVal4 = "97".localizeString()
     
     
-    static let title5 = "Implants (LNG/ETG)".localizeString()
+    static let title5 = "Implants".localizeString()
     static let IssueName5 = "Highly effective".localizeString()
     static let IssueName05 = "Long Lasting".localizeString()
     static let ProgressTitle5 = "Effectiveness to prevent pregnancy".localizeString()
@@ -822,7 +822,7 @@ struct InformationProgressList {
 //
 //    static let content1 = "<Strong>Implants, IUD, female sterilization:</Strong><br> After procedure, little or nothing to do or remember.<br><br>" + "<Strong>Vasectomy:</Strong> Use another method for first 3 months.".localizeString()
 //    static let imagePerc1_1 = "0.05%".localizeString()
-//    static let imageTitle1_1 = "Implants (LNG/ETG)".localizeString()
+//    static let imageTitle1_1 = "Implants".localizeString()
 //    static let imagePerc2_1 = "0.05%".localizeString()
 //    static let imageTitle2_1 = "Female sterilization".localizeString()
 //    static let imagePerc3_1 = "0.8%".localizeString()
@@ -886,7 +886,7 @@ struct EligibilityList {
     static let dmpaNet = "DMPA/NET".localizeString()
     static let progestogenInjectables = "Progestogen-only injectables".localizeString()
     static let lngEtg = "LNG/ETG".localizeString()
-    static let Implants = "Implants (LNG/ETG)".localizeString()
+    static let Implants = "Implants".localizeString()
     static let lngIud = "LNG-IUD".localizeString()
     static let levonorgestrelIUD = "Levonorgestrel IUD".localizeString()
     static let cuIucd = "CU-IUCD".localizeString()
@@ -918,7 +918,7 @@ struct EligibilityList {
     static let PostpartumBreastfeeding48hrs6 = "Postpartum Breastfeeding (48 hrs–6 weeks)".localizeString()
     static let PostpartumBreastfeeding6weeks6 = "Postpartum Breastfeeding (6 weeks–6 months)".localizeString()
     static let PreviousLSCS = "Previous LSCS".localizeString()
-    static let SepsisPuerperalpostabortal = "Sepsis (Puerperal/postabortion)".localizeString()
+    static let SepsisPuerperalpostabortal = "Sepsis (Puerperal/postabortal)".localizeString()
     static let SLE = "SLE".localizeString()
     static let Smoking = "Smoking (>35 years)".localizeString()
     static let Purulentdischarge = "STIs/RTIs<sup><small><small>F</small></small></sup> (Purulent discharge)".localizeString()
@@ -965,7 +965,7 @@ struct EligibilityList {
     static let ProgressVal38_1r3r4r5 = "1<sup><small><small>C</small></small></sup>".localizeString()
     static let ProgressVal38_6r7 = "2<sup><small><small>D</small></small></sup>".localizeString()
     static let ProgressVal39_6r7 = "1<sup><small><small>W</small></small></sup>".localizeString()
-    static let conditionTitle40_1 = "Post Abortion".localizeString()
+    static let conditionTitle40_1 = "Post Abortal".localizeString()
     static let checkboxContent40_1 = "Medical".localizeString()
     static let checkboxContent40_2 = "Surgical".localizeString()
     static let ProgressVal41_6 = "2<sup><small><small>V</small></small></sup>".localizeString()
@@ -1002,7 +1002,7 @@ struct NewString {
     static let Implantsper = "0.05% Implants - 0.8% IUD".localizeString()
     static let Femalesterilization = "0.5% Female sterilization - 0.15% Vasectomy".localizeString()
     static let less48yrs = "Additional Info on how to use the methods safely and effectively".localizeString()
-    static let Medical = "Medical Eligibility Criteria for Contraceptive Use (India-adapted WHO MEC Wheel)".localizeString()
+    static let Medical = "Medical Eligibility Criteria for Contraceptive Use (India-adapted WHO MEC Wheel 2022)".localizeString()
     static let SKIP = "SKIP".localizeString()
     static let START = "START".localizeString()
 }

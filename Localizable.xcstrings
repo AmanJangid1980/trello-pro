@@ -1106,7 +1106,7 @@
         }
       }
     },
-    "2. 1-rod implant, containing 68 mg of etonogestrel (ETG) (Barium Impregnated)." : {
+    "2. 1-rod implant, containing 68 mg of etonogestrel (Barium Impregnated)." : {
       "extractionState" : "manual",
       "localizations" : {
         "as-IN" : {
@@ -15909,7 +15909,7 @@
         }
       }
     },
-    "Implants (LNG/ETG)" : {
+    "Implants" : {
       "extractionState" : "manual",
       "localizations" : {
         "as-IN" : {
@@ -16169,7 +16169,7 @@
         }
       }
     },
-    "India-adapted WHO MEC Wheel" : {
+    "India-adapted MEC Wheel 2022" : {
       "extractionState" : "manual",
       "localizations" : {
         "as-IN" : {
@@ -17422,7 +17422,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Medical Eligibility Criteria for Contraceptive Use (India-adapted WHO MEC Wheel)"
+            "value" : "Medical Eligibility Criteria for Contraceptive Use (India-adapted WHO MEC Wheel 2022)"
           }
         },
         "gu-IN" : {
@@ -18710,7 +18710,7 @@
         }
       }
     },
-    "Medical Eligibility Criteria for Contraceptive Use (India-adapted WHO MEC Wheel)." : {
+    "Medical Eligibility Criteria for Contraceptive Use (India-adapted WHO MEC Wheel 2022)." : {
       "extractionState" : "manual",
       "localizations" : {
         "as-IN" : {
@@ -22480,7 +22480,7 @@
         }
       }
     },
-    "Post Abortion" : {
+    "Post Abortal" : {
       "extractionState" : "manual",
       "localizations" : {
         "as-IN" : {
@@ -26321,7 +26321,7 @@
         }
       }
     },
-    "Sepsis (Puerperal/postabortion)" : {
+    "Sepsis (Puerperal/postabortal)" : {
       "extractionState" : "manual",
       "localizations" : {
         "as-IN" : {
