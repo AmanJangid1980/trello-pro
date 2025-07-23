@@ -53,12 +53,24 @@ class LaunchViewController: UIViewController {
                 }
                 return
             } else {
+                guard let lang = UserDefaults.standard.value(forKey: "SelectedLanguege") as? String else {
+                    print("SelectedLanguege not set or not a String")
+                    return
+                }
+                print("Selected language code: \(lang)")
                 if !UserDefaults.standard.bool(forKey: "GuideCompleted") {
-                    let lang = UserDefaults.standard.value(forKey: "SelectedLanguege") as! String
-                    self.appGuideList.append(AppGuideData(image: UIImage(named: "img2_\(lang)")!, title: StringConstant.guideTitle1, subTitle: ""))
-                    self.appGuideList.append(AppGuideData(image: UIImage(named: "img1_\(lang)")!, title: StringConstant.guideTitle2, subTitle: ""))
-                    self.appGuideList.append(AppGuideData(image: UIImage(named: "img3_\(lang)")!, title: StringConstant.guideTitle3, subTitle: ""))
-                    self.appGuideList.append(AppGuideData(image: UIImage(named: "img4_\(lang)")!, title: StringConstant.guideTitle4, subTitle: ""))
+                    let imageNames = ["img2_\(lang)", "img1_\(lang)", "img3_\(lang)", "img4_\(lang)"]
+                    let guideTitles = [StringConstant.guideTitle1, StringConstant.guideTitle2, StringConstant.guideTitle3, StringConstant.guideTitle4]
+                    for (index, imageName) in imageNames.enumerated() {
+                        print("Trying to load image: \(imageName)")
+                        if let image = UIImage(named: imageName) {
+                            self.appGuideList.append(AppGuideData(image: image, title: guideTitles[index], subTitle: ""))
+                        } else {
+                            print("Image \(imageName) not found, using default image")
+                            let defaultImage = UIImage(systemName: "photo") ?? UIImage()
+                            self.appGuideList.append(AppGuideData(image: defaultImage, title: guideTitles[index], subTitle: ""))
+                        }
+                    }
                     self.guideScrollView.contentSize = CGSize(width: self.guideScrollView.frame.size.width * CGFloat(self.appGuideList.count), height: self.guideScrollView.frame.size.height - 100.0)
                     self.pageController.numberOfPages = self.appGuideList.count
                     var xOrigin = 0.0
