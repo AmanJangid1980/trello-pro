@@ -21,12 +21,15 @@ class DashboardViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
+
     
+   
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        let lang = UserDefaults.standard.value(forKey: "SelectedLanguege") as! String
+        self.startButton.isHidden = (lang != "en")
+
         descLabel.text = StringConstant.launchTagLine
         if StringConstant.launchTagLine.unicodeScalars.count >= 89 {
             desHeightCons.constant = 140.0
