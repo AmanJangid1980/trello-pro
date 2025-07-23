@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DashboardViewController: UIViewController {
+class DashboardViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var lowerWheelImg: UIImageView!
     @IBOutlet weak var upperWheelImg: UIImageView!
@@ -114,6 +114,10 @@ class DashboardViewController: UIViewController {
         if let myObject = Storyboard.dashboard.instantiateViewController(withIdentifier: "HomeListViewController") as? HomeListViewController {
             self.navigationController?.pushViewController(myObject, animated: true)
         }
+    }
+    
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+            return scrollView.subviews.first // This should be the container view holding both images
     }
 }
 
