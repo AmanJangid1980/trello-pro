@@ -54,10 +54,11 @@ class LaunchViewController: UIViewController {
                 return
             } else {
                 if !UserDefaults.standard.bool(forKey: "GuideCompleted") {
-                    self.appGuideList.append(AppGuideData(image: UIImage(named: "img2")!, title: StringConstant.guideTitle1, subTitle: ""))
-                    self.appGuideList.append(AppGuideData(image: UIImage(named: "img1")!, title: StringConstant.guideTitle2, subTitle: ""))
-                    self.appGuideList.append(AppGuideData(image: UIImage(named: "img3")!, title: StringConstant.guideTitle3, subTitle: ""))
-                    self.appGuideList.append(AppGuideData(image: UIImage(named: "img4")!, title: StringConstant.guideTitle4, subTitle: ""))
+                    let lang = UserDefaults.standard.value(forKey: "SelectedLanguege") as! String
+                    self.appGuideList.append(AppGuideData(image: UIImage(named: "img2_\(lang)")!, title: StringConstant.guideTitle1, subTitle: ""))
+                    self.appGuideList.append(AppGuideData(image: UIImage(named: "img1_\(lang)")!, title: StringConstant.guideTitle2, subTitle: ""))
+                    self.appGuideList.append(AppGuideData(image: UIImage(named: "img3_\(lang)")!, title: StringConstant.guideTitle3, subTitle: ""))
+                    self.appGuideList.append(AppGuideData(image: UIImage(named: "img4_\(lang)")!, title: StringConstant.guideTitle4, subTitle: ""))
                     self.guideScrollView.contentSize = CGSize(width: self.guideScrollView.frame.size.width * CGFloat(self.appGuideList.count), height: self.guideScrollView.frame.size.height - 100.0)
                     self.pageController.numberOfPages = self.appGuideList.count
                     var xOrigin = 0.0
