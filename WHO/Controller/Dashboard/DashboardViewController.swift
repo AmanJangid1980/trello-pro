@@ -22,9 +22,8 @@ class DashboardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
     
-   
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let lang = UserDefaults.standard.value(forKey: "SelectedLanguege") as! String
@@ -113,11 +112,20 @@ class DashboardViewController: UIViewController {
         }
     }
     
+    
+    
     @IBAction func tapOnStart(_ sender: UIButton) {
         if let myObject = Storyboard.dashboard.instantiateViewController(withIdentifier: "HomeListViewController") as? HomeListViewController {
             self.navigationController?.pushViewController(myObject, animated: true)
         }
     }
+    
+    
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return scrollView.subviews.first // This should be the container view holding both images
+    }
+
+    
 }
 
 extension DashboardViewController: UIGestureRecognizerDelegate {

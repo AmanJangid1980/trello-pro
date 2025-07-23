@@ -49,7 +49,7 @@ class DocumentTableViewCell: UITableViewCell {
             subTitleLabel.isHidden = cellData.content.isEmpty
         }
         if dotDescLabel != nil {
-            dotDescLabel.text = cellData.content
+            dotDescLabel.text = "• " + cellData.content
             dotDescLabel.sizeToFit()
             dotDescLabel.isHidden = cellData.content.isEmpty
         }
