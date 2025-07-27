@@ -9,18 +9,30 @@ import UIKit
 
 class DashboardViewController: UIViewController {
     
+    @IBOutlet weak var subviewWidth: NSLayoutConstraint!
+    @IBOutlet weak var subViewHeight: NSLayoutConstraint!
+    @IBOutlet weak var subview: UIView!
     @IBOutlet weak var lowerWheelImg: UIImageView!
     @IBOutlet weak var upperWheelImg: UIImageView!
     @IBOutlet weak var descLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var desHeightCons: NSLayoutConstraint!
 
+    @IBOutlet weak var scrollview: UIScrollView!
     var _startTransform = CGAffineTransform()
     var _prevPoint = CGPointZero
     var _deltaAngle = Float()
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        let size = self.scrollview.bounds.width - 20
+        self.subviewWidth.constant = size
+        self.subViewHeight.constant = size
+        self.scrollview.delegate = self
+        scrollview.minimumZoomScale = 1.0
+        scrollview.maximumZoomScale = 4.0
+
     }
     
 
@@ -122,13 +134,28 @@ class DashboardViewController: UIViewController {
     
     
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
-        return scrollView.subviews.first // This should be the container view holding both images
+        return subview // This should be the container view holding both images
     }
+    func scrollViewDidZoom(_ scrollView: UIScrollView) {
+           centerImage()
+       }
 
+       private func centerImage() {
+           let scrollViewSize = scrollview.bounds.size
+           let contentSize = scrollview.contentSize
+
+           let verticalInset = max((scrollViewSize.height - contentSize.height) / 2, 0)
+           let horizontalInset = max((scrollViewSize.width - contentSize.width) / 2, 0)
+
+           scrollview.contentInset = UIEdgeInsets(top: verticalInset,
+                                                  left: horizontalInset,
+                                                  bottom: verticalInset,
+                                                  right: horizontalInset)
+       }
     
 }
 
-extension DashboardViewController: UIGestureRecognizerDelegate {
+extension DashboardViewController: UIGestureRecognizerDelegate, UIScrollViewDelegate {
     func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
         _startTransform = self.lowerWheelImg.transform
         return true

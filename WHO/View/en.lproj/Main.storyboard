@@ -22,18 +22,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lower_wheel_en" translatesAutoresizingMaskIntoConstraints="NO" id="nLt-8H-ZPe">
-                                <rect key="frame" x="-68" y="208" width="550" height="550"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGV-Nd-04X">
+                                <rect key="frame" x="0.0" y="188" width="414" height="590"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d0m-JG-6Kw">
+                                        <rect key="frame" x="0.0" y="0.0" width="444" height="444"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lower_wheel_en" translatesAutoresizingMaskIntoConstraints="NO" id="nLt-8H-ZPe">
+                                                <rect key="frame" x="0.0" y="0.0" width="444" height="444"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upper_wheel_en" translatesAutoresizingMaskIntoConstraints="NO" id="M3F-Nx-fVa">
+                                                <rect key="frame" x="0.0" y="0.0" width="444" height="444"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="M3F-Nx-fVa" firstAttribute="leading" secondItem="d0m-JG-6Kw" secondAttribute="leading" id="HhG-jy-aY8"/>
+                                            <constraint firstAttribute="trailing" secondItem="nLt-8H-ZPe" secondAttribute="trailing" id="LLQ-c8-SdM"/>
+                                            <constraint firstAttribute="height" constant="444" id="T9M-8P-per"/>
+                                            <constraint firstItem="M3F-Nx-fVa" firstAttribute="top" secondItem="d0m-JG-6Kw" secondAttribute="top" id="c7g-a5-fqf"/>
+                                            <constraint firstAttribute="width" constant="444" id="ceC-Vn-ZbM"/>
+                                            <constraint firstAttribute="bottom" secondItem="nLt-8H-ZPe" secondAttribute="bottom" id="h7W-sK-6ZQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="M3F-Nx-fVa" secondAttribute="bottom" id="npi-Qb-tGj"/>
+                                            <constraint firstItem="nLt-8H-ZPe" firstAttribute="top" secondItem="d0m-JG-6Kw" secondAttribute="top" id="vZO-YR-1mn"/>
+                                            <constraint firstItem="nLt-8H-ZPe" firstAttribute="leading" secondItem="d0m-JG-6Kw" secondAttribute="leading" id="xV1-0J-Dkc"/>
+                                            <constraint firstAttribute="trailing" secondItem="M3F-Nx-fVa" secondAttribute="trailing" id="zIP-a8-W7P"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="nLt-8H-ZPe" secondAttribute="height" multiplier="1:1" id="uBd-JW-7FW"/>
+                                    <constraint firstItem="d0m-JG-6Kw" firstAttribute="leading" secondItem="PGV-Nd-04X" secondAttribute="leading" id="DC0-LL-apB"/>
+                                    <constraint firstAttribute="trailing" secondItem="d0m-JG-6Kw" secondAttribute="trailing" id="Inm-ze-cqh"/>
+                                    <constraint firstItem="d0m-JG-6Kw" firstAttribute="top" secondItem="PGV-Nd-04X" secondAttribute="top" id="njV-5c-cXU"/>
+                                    <constraint firstAttribute="bottom" secondItem="d0m-JG-6Kw" secondAttribute="bottom" id="v4N-ju-OP0"/>
                                 </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upper_wheel_en" translatesAutoresizingMaskIntoConstraints="NO" id="M3F-Nx-fVa">
-                                <rect key="frame" x="-68" y="208" width="550" height="550"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="M3F-Nx-fVa" secondAttribute="height" multiplier="1:1" id="9GI-eu-58K"/>
-                                </constraints>
-                            </imageView>
+                            </scrollView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cg9-9C-YLX">
                                 <rect key="frame" x="10" y="88" width="394" height="100"/>
                                 <subviews>
@@ -93,17 +116,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.19215686269999999" green="0.42352941179999998" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="M3F-Nx-fVa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0WQ-dR-QKI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yJu-6P-HEx" secondAttribute="bottom" constant="15" id="2Pi-QE-6Us"/>
+                            <constraint firstItem="PGV-Nd-04X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2ng-RC-fki"/>
                             <constraint firstItem="yJu-6P-HEx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5aO-T4-1eE"/>
-                            <constraint firstItem="nLt-8H-ZPe" firstAttribute="top" secondItem="cg9-9C-YLX" secondAttribute="bottom" constant="20" id="9ST-A6-xOH"/>
-                            <constraint firstItem="M3F-Nx-fVa" firstAttribute="top" secondItem="cg9-9C-YLX" secondAttribute="bottom" constant="20" id="Buq-vI-f3K"/>
+                            <constraint firstItem="yJu-6P-HEx" firstAttribute="top" secondItem="PGV-Nd-04X" secondAttribute="bottom" id="6mz-u6-cxv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PGV-Nd-04X" secondAttribute="trailing" id="CLk-Ve-6Cf"/>
                             <constraint firstItem="cg9-9C-YLX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="KhQ-4U-2FJ"/>
-                            <constraint firstItem="yJu-6P-HEx" firstAttribute="top" secondItem="M3F-Nx-fVa" secondAttribute="bottom" constant="20" id="b56-cf-dz9"/>
+                            <constraint firstItem="PGV-Nd-04X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UQv-xo-g4c"/>
+                            <constraint firstItem="PGV-Nd-04X" firstAttribute="top" secondItem="cg9-9C-YLX" secondAttribute="bottom" id="btn-FS-fZ1"/>
+                            <constraint firstItem="PGV-Nd-04X" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dww-gT-hao"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cg9-9C-YLX" secondAttribute="trailing" constant="10" id="gb2-7V-pEq"/>
-                            <constraint firstItem="nLt-8H-ZPe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iQr-eR-CwP"/>
                             <constraint firstItem="cg9-9C-YLX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="o6d-Af-mQg"/>
-                            <constraint firstItem="yJu-6P-HEx" firstAttribute="top" secondItem="nLt-8H-ZPe" secondAttribute="bottom" constant="20" id="pMB-wk-E6t"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Fvo-ok-T69"/>
@@ -112,7 +135,11 @@
                         <outlet property="desHeightCons" destination="VCa-qH-fFb" id="zfq-5u-kiw"/>
                         <outlet property="descLabel" destination="TCP-r7-I3k" id="K3B-Xm-Dwo"/>
                         <outlet property="lowerWheelImg" destination="nLt-8H-ZPe" id="Tcm-sE-j2l"/>
+                        <outlet property="scrollview" destination="PGV-Nd-04X" id="myK-l2-QNw"/>
                         <outlet property="startButton" destination="yJu-6P-HEx" id="t9m-Tq-GGL"/>
+                        <outlet property="subViewHeight" destination="ceC-Vn-ZbM" id="oYf-51-vTr"/>
+                        <outlet property="subview" destination="d0m-JG-6Kw" id="2T9-MD-nw1"/>
+                        <outlet property="subviewWidth" destination="T9M-8P-per" id="kBS-H2-ig1"/>
                         <outlet property="upperWheelImg" destination="M3F-Nx-fVa" id="FXH-yB-yRq"/>
                     </connections>
                 </viewController>
@@ -796,7 +823,7 @@
         <image name="green_arrow" width="18" height="11"/>
         <image name="halfWheel" width="392" height="725"/>
         <image name="ic_back_arrow" width="18" height="30"/>
-        <image name="lang_icon" width="40" height="35"/>
+        <image name="lang_icon" width="384.10000610351562" height="353.89999389648438"/>
         <image name="language" width="384.10000610351562" height="353.89999389648438"/>
         <image name="lower_wheel_en" width="3615" height="3615"/>
         <image name="option" width="35" height="35"/>

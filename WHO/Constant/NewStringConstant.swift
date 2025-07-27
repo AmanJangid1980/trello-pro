@@ -386,9 +386,9 @@ struct MaleSterilization {
 
 struct AboutTheWheel {
     
-    static let content_1 = "The India-adapted MEC wheel (2022-23) contains the medical eligibility criteria for starting use of contraceptive methods. It has been adapted from WHO MEC Wheel for contraceptive use and is based on Medical Eligibility Criteria for Contraceptive Use, 4th and 5th edition (2008 and 2015). It guides family planning providers in recommending safe and effective contraceptive methods for women with medical conditions or medically-relevant characteristics.".localizeString()
+    static let content_1 = "This wheel contains the medical eligibility criteria for starting use of contraceptive methods. It has been adapted from WHO MEC Wheel for contraceptive use (2022 update) and is based on Medical Eligibility Criteria for Contraceptive Use, 4th and 5th edition (2008 and 2022). It guides family planning providers in recommending safe and effective contraceptive methods for women with medical conditions or medically-relevant characteristics.".localizeString()
     
-    static let content_2 = "The wheel includes recommendations on initiating use of seven common types of contraceptives:".localizeString()
+    static let content_2 = "The wheel includes recommendations on initiating use of seven common types of contraceptives :".localizeString()
     
     static let content_3 = "Combined pills (low dose combined oral contraceptives, with < 35 Ug ethinylestradiol) and combined injectable contraceptives.".localizeString()
     
