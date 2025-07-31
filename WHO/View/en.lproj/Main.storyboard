@@ -26,7 +26,7 @@
                                 <rect key="frame" x="0.0" y="188" width="414" height="590"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d0m-JG-6Kw">
-                                        <rect key="frame" x="0.0" y="0.0" width="444" height="444"/>
+                                        <rect key="frame" x="0.0" y="60" width="444" height="444"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lower_wheel_en" translatesAutoresizingMaskIntoConstraints="NO" id="nLt-8H-ZPe">
                                                 <rect key="frame" x="0.0" y="0.0" width="444" height="444"/>
@@ -53,7 +53,7 @@
                                 <constraints>
                                     <constraint firstItem="d0m-JG-6Kw" firstAttribute="leading" secondItem="PGV-Nd-04X" secondAttribute="leading" id="DC0-LL-apB"/>
                                     <constraint firstAttribute="trailing" secondItem="d0m-JG-6Kw" secondAttribute="trailing" id="Inm-ze-cqh"/>
-                                    <constraint firstItem="d0m-JG-6Kw" firstAttribute="top" secondItem="PGV-Nd-04X" secondAttribute="top" id="njV-5c-cXU"/>
+                                    <constraint firstItem="d0m-JG-6Kw" firstAttribute="top" secondItem="PGV-Nd-04X" secondAttribute="top" constant="60" id="njV-5c-cXU"/>
                                     <constraint firstAttribute="bottom" secondItem="d0m-JG-6Kw" secondAttribute="bottom" id="v4N-ju-OP0"/>
                                 </constraints>
                             </scrollView>

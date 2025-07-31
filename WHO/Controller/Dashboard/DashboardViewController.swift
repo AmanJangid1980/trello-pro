@@ -31,7 +31,7 @@ class DashboardViewController: UIViewController {
         self.subViewHeight.constant = size
         self.scrollview.delegate = self
         scrollview.minimumZoomScale = 1.0
-        scrollview.maximumZoomScale = 4.0
+        scrollview.maximumZoomScale = 1.6
 
     }
     
@@ -137,7 +137,10 @@ class DashboardViewController: UIViewController {
         return subview // This should be the container view holding both images
     }
     func scrollViewDidZoom(_ scrollView: UIScrollView) {
-           centerImage()
+//           centerImage()
+//        centerImageAtTop()
+        centerHorizontallyAtTop()
+
        }
 
        private func centerImage() {
@@ -152,6 +155,46 @@ class DashboardViewController: UIViewController {
                                                   bottom: verticalInset,
                                                   right: horizontalInset)
        }
+    private func centerHorizontallyAtTop() {
+        let scrollViewSize = scrollview.bounds.size
+        let contentSize = scrollview.contentSize
+
+        // Horizontally center if content is smaller than scroll view width
+        let horizontalInset = max((scrollViewSize.width - contentSize.width) / 2, 0)
+
+        // Keep top aligned
+        scrollview.contentInset = UIEdgeInsets(top: 0,
+                                               left: horizontalInset,
+                                               bottom: 0,
+                                               right: horizontalInset)
+    }
+
+    func scrollViewWillBeginZooming(_ scrollView: UIScrollView, with view: UIView?) {
+        // Set offset to top-center when zoom begins
+        let topOffset = CGPoint(x: (scrollview.contentSize.width - scrollview.bounds.width) / 2, y: 0)
+        scrollview.setContentOffset(topOffset, animated: false)
+    }
+
+
+    private func centerImageAtTop() {
+        let scrollViewSize = scrollview.bounds.size
+        let contentSize = scrollview.contentSize
+
+        // Horizontal center as usual
+        let horizontalInset = max((scrollViewSize.width - contentSize.width) / 2, 0)
+        
+        // Top alignment (0 or slight padding if needed)
+        let topInset: CGFloat = 20.0 // You can set it to 0 for exact top
+
+        scrollview.contentInset = UIEdgeInsets(top: topInset,
+                                               left: horizontalInset,
+                                               bottom: 0,
+                                               right: horizontalInset)
+
+        // Optionally scroll to top after zoom
+        scrollview.setContentOffset(CGPoint(x: 0, y: -topInset), animated: false)
+    }
+
     
 }
 

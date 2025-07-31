@@ -2814,7 +2814,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "<div style=\"margin: 5px 0;\">\n  <p>This wheel contains the medical eligibility criteria for starting use of contraceptive methods. It has been adapted from WHO MEC Wheel for contraceptive use (2022 update) and is based on Medical Eligibility Criteria for Contraceptive Use, 4th and 5th edition (2008 and 2022). It guides family planning providers in recommending safe and effective contraceptive methods for women with medical conditions or medically-relevant characteristics.<br /><br />The wheel includes recommendations on initiating use of seven common types of contraceptives :</p>\n  <ol>\n    <li>Combined pills (low dose combined oral contraceptives, with &lt; 35 Ug ethinylestradiol) and combined injectable contraceptives</li>\n    <li>Centchroman pills</li>\n    <li>Progestogen-only pills</li>\n    <li>Progestogen-only injectables. DMPA (a 3-monthly injectable) and NET-EN (a 2-monthly injectable)</li>\n    <li>Progestogen-only implants</li>\n    <li>Copper-bearing IUCD</li>\n    <li>Levonorgestrel Intra Uterine Device (LNG-IUD)</li>\n  </ol>\n  <p><br />The guidance in the wheel applies to initiation of contraceptive methods. Recommendations for continuation of method use, when a woman develops a medical condition while using the method, can be found in the <strong>Medical Eligibility Criteria for Contraceptive Use</strong> guidelines.</p>\n  <p>This is an e-version of India-adapted WHO MEC Wheel by MoHFW</p>\n</div>"
+            "value": "<div style=\"margin: 5px 0;\"><p>The India-adapted MEC wheel (2022-23) contains the medical eligibility criteria for starting use of contraceptive methods. It has been adapted from WHO MEC Wheel for contraceptive use and is based on Medical Eligibility Criteria for Contraceptive Use, 4th and 5th edition (2008 and 2015). It guides family planning providers in recommending safe and effective contraceptive methods for women with medical conditions or medically-relevant characteristics.<br /><br />The wheel includes recommendations on initiating use of seven common types of contraceptives:</p><ol><li>Combined pills (low dose combined oral contraceptives, with &lt; 35 µg ethinylestradiol) and combined injectable contraceptives</li><li>Centchroman pills</li><li>Progestogen-only pills</li><li>Progestogen-only injectables. DMPA (a 3-monthly injectable) and NET-EN (a 2-monthly injectable)</li><li>Progestogen-only implants</li><li>Copper-bearing IUCD</li><li>Levonorgestrel Intra Uterine Device (LNG-IUD)</li></ol><p><br />The guidance in the wheel applies to initiation of contraceptive methods. Recommendations for continuation of method use, when a woman develops a medical condition while using the method, can be found in the Medical Eligibility Criteria for Contraceptive Use guidelines.</p><p>This is an e-version of India-adapted WHO MEC Wheel by MoHFW.</p><p>WHO MEC Wheel for contraceptive use (2022) can be downloaded from Google Play Store and iOS App Store.</p><p><strong>Cited Sources:</strong></p><ol style=\"padding-left: 20px;\"><li><a href=\"https://nhm.gov.in/index1.php?lang=1&level=3&sublinkid=963&lid=470\" target=\"_blank\" style=\"font-weight: bold; color: #1a73e8; text-decoration: none;\">Ministry of Health & Family Welfare – Government of India: Schemes/Guidelines- FP</a><br /><em>Medical Eligibility Criteria Wheel for Contraceptive Use (India adaptation)</em><br /></li><li><a href=\"https://play.google.com/store/apps/details?id=com.who.mec.wheel&hl=en_IN&pli=1\" target=\"_blank\" style=\"font-weight: bold; color: #1a73e8; text-decoration: none;\">World Health Organization: India adapted WHO MEC Wheel App on Google Play</a><br /><em>Official WHO Mobile App for MEC Wheel</em><br /></li><li><a href=\"https://www.who.int/publications/i/item/9789241549158\" target=\"_blank\" style=\"font-weight: bold; color: #1a73e8; text-decoration: none;\">World Health Organization: Medical eligibility criteria for contraceptive use guideline, 5th Edition (2015)</a><br /></li><li><a href=\"https://www.who.int/publications/i/item/9789241549257\" target=\"_blank\" style=\"font-weight: bold; color: #1a73e8; text-decoration: none;\">World Health Organization: Medical Eligibility Criteria for Contraceptive Use Wheel, 5th Edition (2015)</a><br /></li><li><a href=\"https://www.who.int/news/item/29-08-2019-new-app-for-who-s-medical-eligibility-criteria-for-contraceptive-use\" target=\"_blank\" style=\"font-weight: bold; color: #1a73e8; text-decoration: none;\">World Health Organization News Release (2019): WHO MEC App Announcement</a><em>New App for WHO’s <span style=\"font-style: italic;\">Medical Eligibility Criteria for Contraceptive Use</span></em><br /></li><li><a href=\"https://www.who.int/publications/i/item/9789241565400\" target=\"_blank\" style=\"font-weight: bold; color: #1a73e8; text-decoration: none;\">World Health Organization: Selected practice recommendations for contraceptive use, Third edition 2016</a></li></ol></div>",
           }
         },
         "gu-IN" : {
@@ -17410,13 +17410,13 @@
         "as-IN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "গৰ্ভনিৰোধক ব্যৱহাৰৰ ক্ষেত্ৰত চিকিৎসা যোগ্যতাৰ মাপকাঠি (ভাৰত-অভিযোজিত WHO MEC Wheel 2022)"
+            "value" : "গৰ্ভনিৰোধক ব্যৱহাৰৰ ক্ষেত্ৰত চিকিৎসা যোগ্যতাৰ মাপকাঠি (ভাৰত-অভিযোজিত WHO MEC Wheel)"
           }
         },
         "bn-IN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "গর্ভনিরোধক ব্যবহারের চিকিৎসাগত যোগ্যতার মাপকাঠি (ভারত-গৃহিত WHO MEC Wheel 2022)"
+            "value" : "গর্ভনিরোধক ব্যবহারের চিকিৎসাগত যোগ্যতার মাপকাঠি (ভারত-গৃহিত WHO MEC Wheel)"
           }
         },
         "en" : {
@@ -17428,49 +17428,49 @@
         "gu-IN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ગર્ભનિરોધકના ઉપયોગ માટેની તબીબી પાત્રતાના માપદંડો (ઇન્ડિયા-એડેપ્ટેડ ડબ્લ્યુએચઓ એમઇસી વ્હિલ 2022)."
+            "value" : "ગર્ભનિરોધકના ઉપયોગ માટેની તબીબી પાત્રતાના માપદંડો (ઇન્ડિયા-એડેપ્ટેડ ડબ્લ્યુએચઓ એમઇસી વ્હિલ)."
           }
         },
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "गर्भनिरोधक के उपयोग के लिए चिकित्सकीय पात्रता मापदंड (भारत के लिए अनुकूलित WHO MEC व्हील 2022) "
+            "value" : "गर्भनिरोधक के उपयोग के लिए चिकित्सकीय पात्रता मापदंड (भारत के लिए अनुकूलित WHO MEC व्हील) "
           }
         },
         "kn-IN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ಗರ್ಭನಿರೋಧಕ ಬಳಕೆಗೆ ವೈದ್ಯಕೀಯ ಅರ್ಹತಾ ಮಾನದಂಡಗಳು (ಭಾರತ-ಅಳವಡಿಸಿಕೊಂಡ ಡಬ್ಲ್ಯುಎಚ್ಓ ಎಂಇಸಿ ವ್ಹೀಲ್ 2022) "
+            "value" : "ಗರ್ಭನಿರೋಧಕ ಬಳಕೆಗೆ ವೈದ್ಯಕೀಯ ಅರ್ಹತಾ ಮಾನದಂಡಗಳು (ಭಾರತ-ಅಳವಡಿಸಿಕೊಂಡ ಡಬ್ಲ್ಯುಎಚ್ಓ ಎಂಇಸಿ ವ್ಹೀಲ್) "
           }
         },
         "ml-IN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ഗർഭനിരോധന ഉപയോഗത്തിനുള്ള മെഡിക്കൽ യോഗ്യതാ മാനദണ്ഡം (ഇന്ത്യ-അഡാപ്റ്റഡ് WHO MEC ചക്രം 2022)"
+            "value" : "ഗർഭനിരോധന ഉപയോഗത്തിനുള്ള മെഡിക്കൽ യോഗ്യതാ മാനദണ്ഡം (ഇന്ത്യ-അഡാപ്റ്റഡ് WHO MEC ചക്രം)"
           }
         },
         "or-IN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ଗର୍ଭନିରୋଧକ ବ୍ୟବହାର ପାଇଁ ଡାକ୍ତରୀ ଯୋଗ୍ୟତା ମାନଦଣ୍ଡ (ଭାରତ-ଅନୁକୂଳ WHO MEC ଚକ 2022)"
+            "value" : "ଗର୍ଭନିରୋଧକ ବ୍ୟବହାର ପାଇଁ ଡାକ୍ତରୀ ଯୋଗ୍ୟତା ମାନଦଣ୍ଡ (ଭାରତ-ଅନୁକୂଳ WHO MEC ଚକ)"
           }
         },
         "pa-IN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ਗਰਭ ਨਿਰੋਧਕ ਵਰਤੋਂ ਲਈ ਡਾਕਟਰੀ ਯੋਗਤਾ ਮਾਪਦੰਡ (ਭਾਰਤ-ਅਨੁਕੂਲ WHO MEC ਵ੍ਹੀਲ 2022)"
+            "value" : "ਗਰਭ ਨਿਰੋਧਕ ਵਰਤੋਂ ਲਈ ਡਾਕਟਰੀ ਯੋਗਤਾ ਮਾਪਦੰਡ (ਭਾਰਤ-ਅਨੁਕੂਲ WHO MEC ਵ੍ਹੀਲ)"
           }
         },
         "ta-IN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "கருத்தடை பயன்பாட்டிற்கான மருத்துவ தகுதி அளவுகோல்கள்  (இந்தியா-WHO MEC Wheel 2022-ஐத் தழுவியது)"
+            "value" : "கருத்தடை பயன்பாட்டிற்கான மருத்துவ தகுதி அளவுகோல்கள்  (இந்தியா-WHO MEC Wheel ஐத் தழுவியது)"
           }
         },
         "te-IN" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "గర్భనిరోధక సాధనాల వాడుకకు గల వైద్య పరమైన అర్హత కు సంబంధించిన విధి విధానం (భారతదేశం- WHO MEC Wheel 2022)అవలంబించినది"
+            "value" : "గర్భనిరోధక సాధనాల వాడుకకు గల వైద్య పరమైన అర్హత కు సంబంధించిన విధి విధానం (భారతదేశం- WHO MEC Wheel)అవలంబించినది"
           }
         }
       }
